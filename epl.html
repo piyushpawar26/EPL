@@ -1,0 +1,738 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-100061996-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments)};
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-100061996-1');
+	</script>
+
+		<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-KLBXKH6');</script>
+	<!-- End Google Tag Manager -->
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EPL'17</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="css/main1.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	
+</head>	
+
+<body>
+		<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLBXKH6"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<div id="nav">
+		<div class="container-fluid">
+			<img src="img/logo.svg" id="logo"/> 
+			<h3 id="name">Enthusia Premier League</h3>
+			<ul id="headers">
+		        <li><a href="#results" class="slideToPage">Results</a></li>
+		        <li><a href="#fixtures" class="slideToPage">Fixtures</a></li>
+		        <li><a href="#points_table" class="slideToPage">Points Table</a></li>
+		        <li><a href="#teams" class="slideToPage">Teams</a></li>
+		        <li><a href="#gallery" class="slideToPage">Gallery</a></li>
+		        <li><a href="#sponsors" class="slideToPage">Sponsors</a></li>
+		    </ul>
+		</div>
+	</div>
+
+	<div id="clubs_intro">
+		<div class="container">
+			<div id="club_logos">
+				Teams: 
+				<img src="img/team_logo/Goal snipers.jpg"  onclick="open_modal('goal_snipers')"/>
+				<img src="img/team_logo/Global Elites.jpg"  onclick="open_modal('global_elites')"/>
+				<img src="img/team_logo/Blazing strikers.jpg"  onclick="open_modal('blazing_strikers')"/>
+				<img src="img/team_logo/Ballotellitubbies.jpg"  onclick="open_modal('balotellitubbies')"/>
+				<img src="img/team_logo/Chai busquets.jpg"  onclick="open_modal('chai_busquets')"/>
+				<img src="img/team_logo/Hurt Lockers.jpg"  onclick="open_modal('hurt_lockers')"/>
+				<img src="img/team_logo/Manic marauders.jpg"  onclick="open_modal('manic_marauders')"/>
+				<img src="img/team_logo/praetorian.jpg"  onclick="open_modal('praetorians')"/>
+				<img src="img/team_logo/SILENT killers.jpg"  onclick="open_modal('silent_killers')"/>
+				<img src="img/team_logo/SMARTINI royale.jpg"  onclick="open_modal('smartini_royale')"/>
+				<img src="img/team_logo/Sons of pitches.jpg"  onclick="open_modal('sons_of_pitches')"/>
+				<img src="img/team_logo/The juggernauts.jpg"  onclick="open_modal('the_juggernauts')"/>
+				<img src="img/team_logo/The unknowns.jpg"  onclick="open_modal('the_unknowns')"/>
+				<img src="img/team_logo/triumphant troopers.jpg"  onclick="open_modal('triumphant_troopers')"/>
+				<img src="img/team_logo/Unreal madrid.jpg"  onclick="open_modal('unreal_madrid')"/>
+				<img src="img/team_logo/Valar victorious.jpg"  onclick="open_modal('valar_victorious')"/>
+			</div>
+		</div>
+	</div>
+
+	<div id="main_bg">
+		<div class="container-fluid">
+			<div class="container" id="main_text">
+				<h2>Enthusia Premier League</h2>
+				<h4>2.0</h4>
+				<!-- <h3>Twice The Guts <br>Double The Glory</h3> -->
+				<div id="main_links" class="row">					
+					<a href="#results" class="slideToPage">Results</a>					
+					<a href="#fixtures" class="slideToPage">Fixtures</a>					
+					<a href="#points_table" class="slideToPage">Points Table</a>
+					<a href="#leaders" class="slideToPage">Leaderboard</a>					
+					<a href="#teams" class="slideToPage">Teams</a>
+					<a href="#gallery" class="slideToPage">Gallery</a>
+					<a href="#sponsors" class="slideToPage">Sponsors</a>
+				</div>
+				<div id='stars'></div>
+				<div id='stars2'></div>
+				<div id='stars3'></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="results">
+		<div class="container">
+			<h4>Results: Last Week</h4><hr>
+			<div id="match">
+				<div class="container">
+					<h5 id="left_name">Triumphant Troopers</h5>
+					<div id="match_scores">
+						<h5>0 - 4</h5>
+					</div>
+					<h5 id="right_name">The Juggernauts</h5>
+				</div>
+			</div><hr>
+			<div id="match">
+				<div class="container">
+					<h5 id="left_name">Chai Busquets</h5>
+					<div id="match_scores">
+						<h5>0 - 2</h5>
+					</div>
+					<h5 id="right_name">Baloteletubbies</h5>
+				</div>
+			</div><hr>
+			<div id="match">
+				<div class="container">
+					<h5 id="left_name">Goal Snipers</h5>
+					<div id="match_scores">
+						<h5>0 - 0</h5>
+					</div>
+					<h5 id="right_name">Unreal Madrid</h5>
+				</div>
+			</div><hr>
+			<div id="match">
+				<div class="container">
+					<h5 id="left_name">Global Elites</h5>
+					<div id="match_scores">
+						<h5>3 - 0</h5>
+					</div>
+					<h5 id="right_name">Sons Of Pitches</h5>
+				</div>
+			</div><hr>
+			<button type="button" class="btn btn-primary" id="results_more" data-toggle="modal" href="#more_results">See More</button>
+		</div>
+	</div>
+
+	<div id="fixtures">
+		<div class="container">
+			<h4>Fixtures: This Week</h4><hr>
+			<div id="match">
+				<div class="container">
+					<h5 id="left_name">TBA</h5>
+					<!-- <img src="img/Mumbai_City_FC.png" alt="" /> -->
+					<h5 id="fix_vs">VS</h5>
+					<!-- <img src="img/Mumbai_City_FC.png" alt="" /> -->
+					<h5 id="right_name">TBA</h5>
+					<h5 id="fix_when"></h5>
+				</div>
+			</div><hr>
+			<div id="match">
+				<div class="container">
+					<h5 id="left_name">TBA</h5>
+					<!-- <img src="img/Mumbai_City_FC.png" alt="" /> -->
+					<h5 id="fix_vs">VS</h5>
+					<!-- <img src="img/Mumbai_City_FC.png" alt="" /> -->
+					<h5 id="right_name">TBA</h5>
+					<h5 id="fix_when"></h5>
+				</div>
+			</div><hr>
+			<div id="match">
+				<div class="container">
+					<h5 id="left_name">TBA</h5>
+					<!-- <img src="img/Mumbai_City_FC.png" alt="" /> -->
+					<h5 id="fix_vs">VS</h5>
+					<!-- <img src="img/Mumbai_City_FC.png" alt="" /> -->
+					<h5 id="right_name">TBA</h5>
+					<h5 id="fix_when"></h5>
+				</div>
+			</div><hr>
+			<div id="match">
+				<div class="container">
+					<h5 id="left_name">TBA</h5>
+					<!-- <img src="img/Mumbai_City_FC.png" alt="" /> -->
+					<h5 id="fix_vs">VS</h5>
+					<!-- <img src="img/Mumbai_City_FC.png" alt="" /> -->
+					<h5 id="right_name">TBA</h5>
+					<h5 id="fix_when"></h5>
+				</div>
+			</div><hr>
+			<button type="button" class="btn btn-primary" id="fixtures_more" data-toggle="modal" href="#more_fixtures">See More</button>
+		</div>
+	</div>
+
+	<div id="points_table">
+		<div class="container">
+			<h4>Points Table</h4>
+		</div>
+		<div class="container-fluid">
+			<iframe src="http://challonge.com/t6rslqns/module?tab=groups" width="100%" height="700" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+		</div>
+	</div>
+
+	<div id="leaders">
+		<div class="container">
+			<h4>Leaderboard</h4>
+			<div class="row">
+				<div class="col-md-5" id="boot">
+					<img src="img/Boot.png">
+					<h5>Golden Boot</h5><hr>
+					<div class="team">
+						<h3>Kartik Shrinivasan<br>Blazing Strikers</h3>
+						<h2>4</h2>
+					</div><hr>
+					<div class="team">
+						<h3>Abhinav Salokhe<br>The Juggernauts</h3>
+						<h2>4</h2>
+					</div><hr>
+					<div class="team">
+						<h3>Aditya Sood<br>Praetorians</h3>
+						<h2>3</h2>
+					</div>
+				</div>
+				<div class="col-md-5" id="boot">
+					<img src="img/GLOVES.png">
+					<h5>Golden Gloves</h5><hr>
+					<div class="team">
+						<h3>Poojan Rambhia<br>Unreal Madrid</h3>
+						<h2>2</h2>
+					</div><hr>
+					<div class="team">
+						<h3>Sanket Dhyanwadkar<br>Sons of Pitches</h3>
+						<h2>1</h2>
+					</div><hr>
+					<div class="team">
+						<h3>Ashutosh Tayade<br>Triumphant Toopers</h3>
+						<h2>1</h2>
+					</div><hr>
+					<div class="team">
+						<h3>Aman Daga<br>Blazing Strikers</h3>
+						<h2>1</h2>
+					</div><hr>
+					<div class="team">
+						<h3>Pranchit<br>Goal Snipers</h3>
+						<h2>1</h2>
+					</div><hr>
+					<div class="team">
+						<h3>Harsh Marfatia<br>Global Elites</h3>
+						<h2>1</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="teams">
+		<div class="container">
+			<h4>Teams</h4>
+			<div class="row">
+				<div id="group">
+					<h5>Group A</h5><hr>
+					<div class="team" onclick="open_modal('silent_killers')">
+						<!-- <img src="img/Mumbai_City_FC.png"> -->
+						<h3>Silent Killers</h3>
+					</div><hr>
+					<div class="team" onclick="open_modal('smartini_royale')">
+						<!-- <img src="img/Mumbai_City_FC.png"> -->
+						<h3>Smartini Royale</h3>
+					</div><hr>
+					<div class="team" onclick="open_modal('manic_marauders')">
+						<!-- <img src="img/Mumbai_City_FC.png"> -->
+						<h3>Manic Marauders</h3>
+					</div><hr>
+					<div class="team" onclick="open_modal('hurt_lockers')">
+						<!-- <img src="img/Mumbai_City_FC.png"> -->
+						<h3>Hurt Locker's</h3>
+					</div>
+				</div>
+				<div id="group">
+					<h5>Group B</h5><hr>
+					<div class="team" onclick="open_modal('triumphant_troopers')">
+						<!-- <img src="img/Mumbai_City_FC.png"> -->
+						<h3>Triumphant Troopers</h3>
+					</div><hr>
+					<div class="team" onclick="open_modal('the_juggernauts')">
+						<!-- <img src="img/Mumbai_City_FC.png"> -->
+						<h3>The Juggernauts</h3>
+					</div><hr>
+					<div class="team" onclick="open_modal('chai_busquets')">
+						<!-- <img src="img/Mumbai_City_FC.png"> -->
+						<h3>Chai Busquets</h3>
+					</div><hr>
+					<div class="team" onclick="open_modal('balotellitubbies')">
+						<!-- <img src="img/Mumbai_City_FC.png"> -->
+						<h3>Balotelitubbies</h3>
+					</div>
+				</div>
+				<div id="group">
+					<h5>Group C</h5><hr>
+					<div class="team" onclick="open_modal('goal_snipers')">
+						<!-- <img src="img/Mumbai_City_FC.png"> -->
+						<h3>Goal Snipers</h3>
+					</div><hr>
+					<div class="team" onclick="open_modal('global_elites')">
+						<!-- <img src="img/Mumbai_City_FC.png"> -->
+						<h3>Global Elites</h3>
+					</div><hr>
+					<div class="team" onclick="open_modal('sons_of_pitches')">
+						<!-- <img src="img/Mumbai_City_FC.png"> -->
+						<h3>Sons Of Pitches</h3>
+					</div><hr>
+					<div class="team" onclick="open_modal('unreal_madrid')">
+						<!-- <img src="img/Mumbai_City_FC.png"> -->
+						<h3>Unreal Madrid</h3>
+					</div>
+				</div>
+				<div id="group">
+					<h5>Group D</h5><hr>
+					<div class="team" onclick="open_modal('praetorians')">
+						<!-- <img src="img/Mumbai_City_FC.png"> -->
+						<h3>Praetorian</h3>
+					</div><hr>
+					<div class="team" onclick="open_modal('blazing_strikers')">
+						<!-- <img src="img/Mumbai_City_FC.png"> -->
+						<h3>Blazing Strikers</h3>
+					</div><hr>
+					<div class="team" onclick="open_modal('the_unknowns')">
+						<!-- <img src="img/Mumbai_City_FC.png"> -->
+						<h3>The Unknowns</h3>
+					</div><hr>
+					<div class="team" onclick="open_modal('valar_victorious')">
+						<!-- <img src="img/Mumbai_City_FC.png"> -->
+						<h3>Valar Victorious</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="gallery">
+		<div class="container">
+			<h4>Gallery</h4>
+		</div>
+		<div class="container-fluid">
+			<div class="w3-content w3-display-container">
+				<img class="mySlides" src="img/gallery/image1.JPG" style="width:100%">
+				<img class="mySlides" src="img/gallery/image2.JPG" style="width:100%">
+				<img class="mySlides" src="img/gallery/image3.JPG" style="width:100%">
+				<img class="mySlides" src="img/gallery/image4.JPG" style="width:100%">
+				<img class="mySlides" src="img/gallery/image5.JPG" style="width:100%">
+				<img class="mySlides" src="img/gallery/image6.JPG" style="width:100%">
+				<img class="mySlides" src="img/gallery/image7.JPG" style="width:100%">
+				<img class="mySlides" src="img/gallery/image8.JPG" style="width:100%">
+				<img class="mySlides" src="img/gallery/image9.jpg" style="width:100%">
+				<img class="mySlides" src="img/gallery/image10.jpg" style="width:100%">
+				<img class="mySlides" src="img/gallery/image11.jpg" style="width:100%">
+				<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+				<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="sponsors">
+		<div class="container">
+			<h4>Sponsors</h4>
+			<div id="spons">
+				<div class="companies">
+					<img src="img/spons/hd.png" alt=""  /> 
+					<h5>Health Drink Partner</h5>
+				</div>
+				<div class="companies">
+					<img src="img/spons/np.jpg" alt=""  />
+					<h5>Nutrition Partner</h5>
+				</div>
+				<div class="companies">
+					<img src="img/spons/pp.jpg" alt="" />
+					<h5>Photography Partner</h5>
+				</div>
+				<div class="companies">
+					<img src="img/spons/sp.png" alt=""  /> 
+					<h5>Sport Partner</h5>
+				</div>
+				<div class="companies">
+					<img src="img/spons/tp.jpg" alt=""  />
+					<h5>Turf Partner</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class='m_wrap'>
+		<div class='m_content hidden' id="abt">
+			<h3>Enthusia is the Annual National Level Sports festival at VJTI, Mumbai. One of the biggest inter-collegiate Sports festivals in India. Organized by the VJTI Gymkhana student committee.</h3>
+		</div>
+
+		<div class='m_content hidden' id="cont">
+			<div class="container">
+				<div id="contact">
+					<h2>Sanket Chaudhari</h2>
+					<h3>+91 8087210326</h3>
+				</div>
+				<div id="contact">
+					<h2>Nisha Sabu</h2>
+					<h3>+91 9702348356</h3>
+				</div>
+			</div>
+		</div>
+
+		<div class='m_content hidden' id="twit">
+			<a class="twitter-timeline" data-width="900" data-height="500" data-theme="dark" href="https://twitter.com/enthusiavjti">Tweets by enthusiavjti</a>
+		</div>
+
+		<div class='m_content hidden' id="fb">
+			<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fenthusia.vjti&tabs=timeline&width=900&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="900" height="500" scrolling="no" style="width: 900px; height:500px;" frameborder="0" allowTransparency="true"></iframe>
+		</div>
+	</div>
+
+	<footer>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Enthusia 2017</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li class="list-inline-item" id="about_us">
+                            <a >About Us</a>
+                        </li>
+                        <li class="list-inline-item" id="contact_us">
+                            <a>Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item" id="fa-tw">
+                            <a><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item" id="fa-fb">
+                            <a><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <!-- <li class="list-inline-item" id="fa-in">
+                            <a><i class="fa fa-linkedin"></i></a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="portfolio-modal modal fade" id="more_results" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                	<div id="day">
+                		<h4>23rd September</h4><hr>
+						<div id="match">
+							<div class="container">
+								<h5 id="left_name">Triumphant Troopers</h5>
+								<div id="match_scores">
+									<h5>0 - 4</h5>
+								</div>
+								<h5 id="right_name">The Juggernauts</h5>
+							</div>
+						</div><hr>
+						<div id="match">
+							<div class="container">
+								<h5 id="left_name">Chai Busquets</h5>
+								<div id="match_scores">
+									<h5>0 - 2</h5>
+								</div>
+								<h5 id="right_name">Baloteletubbies</h5>
+							</div>
+						</div><hr>
+						<div id="match">
+							<div class="container">
+								<h5 id="left_name">Goal Snipers</h5>
+								<div id="match_scores">
+									<h5>0 - 0</h5>
+								</div>
+								<h5 id="right_name">Unreal Madrid</h5>
+							</div>
+						</div><hr>
+						<div id="match">
+							<div class="container">
+								<h5 id="left_name">Global Elites</h5>
+								<div id="match_scores">
+									<h5>3 - 0</h5>
+								</div>
+								<h5 id="right_name">Sons Of Pitches</h5>
+							</div>
+						</div><hr>
+                	</div>
+                	<div id="day">
+                		<h4>24th September</h4><hr>
+						<div id="match">
+							<div class="container">
+								<h5 id="left_name">Silent Killers</h5>
+								<div id="match_scores">
+									<h5>2 - 3</h5>
+								</div>
+								<h5 id="right_name">Smartini Royale</h5>
+							</div>
+						</div><hr>
+						<div id="match">
+							<div class="container">
+								<h5 id="left_name">Manic Marauders</h5>
+								<div id="match_scores">
+									<h5>3 - 3</h5>
+								</div>
+								<h5 id="right_name">Hurt Lockers</h5>
+							</div>
+						</div><hr>
+						<div id="match">
+							<div class="container">
+								<h5 id="left_name">Praetorian</h5>
+								<div id="match_scores">
+									<h5>2 - 4</h5>
+								</div>
+								<h5 id="right_name">Blazing Strikers</h5>
+							</div>
+						</div><hr>
+                	</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="more_fixtures" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <h4>30th September</h4><hr>
+					<div id="match">
+						<div class="container">
+							<h5 id="left_name">TBA</h5>
+							<!-- <img src="img/Mumbai_City_FC.png" alt="" /> -->
+							<h5 id="fix_vs">VS</h5>
+							<!-- <img src="img/Mumbai_City_FC.png" alt="" /> -->
+							<h5 id="right_name">TBA</h5>
+							<h5 id="fix_when"></h5>
+						</div>
+					</div><hr>
+					<div id="match">
+						<div class="container">
+							<h5 id="left_name">TBA</h5>
+							<!-- <img src="img/Mumbai_City_FC.png" alt="" /> -->
+							<h5 id="fix_vs">VS</h5>
+							<!-- <img src="img/Mumbai_City_FC.png" alt="" /> -->
+							<h5 id="right_name">TBA</h5>
+							<h5 id="fix_when"></h5>
+						</div>
+					</div><hr>
+					<div id="match">
+						<div class="container">
+							<h5 id="left_name">TBA</h5>
+							<!-- <img src="img/Mumbai_City_FC.png" alt="" /> -->
+							<h5 id="fix_vs">VS</h5>
+							<!-- <img src="img/Mumbai_City_FC.png" alt="" /> -->
+							<h5 id="right_name">TBA</h5>
+							<h5 id="fix_when"></h5>
+						</div>
+					</div><hr>
+					<div id="match">
+						<div class="container">
+							<h5 id="left_name">TBA</h5>
+							<!-- <img src="img/Mumbai_City_FC.png" alt="" /> -->
+							<h5 id="fix_vs">VS</h5>
+							<!-- <img src="img/Mumbai_City_FC.png" alt="" /> -->
+							<h5 id="right_name">TBA</h5>
+							<h5 id="fix_when"></h5>
+						</div>
+					</div><hr>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="imageviewer">
+		<div class="modal-dialog">
+			<img src="" id="imagepreview">
+		</div>
+	</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+
+
+<script type="text/javascript">
+
+	$(window).on('load', function(){
+		$('.hide').hide();
+	});
+
+	$('.slideToPage').click(function(e){
+		var headerOffset =  $('#nav').outerHeight();
+		var linkHref = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(linkHref).offset().top-headerOffset
+		},1000);
+		e.preventDefault();
+	});
+
+    $(window).on('scroll', function(){
+		var scroll = $(window).scrollTop();
+        if (scroll <= 550) {
+            $('#nav').removeClass('show');
+        } 
+        if (scroll > 550) {
+            $('#nav').addClass('show');
+        }
+	});
+
+	$(window).on('resize', function(){
+		var width = $(window).width();
+		if (width < 768) {
+			document.getElementById("name").innerHTML = "E P L";
+			$('#headers').hide();
+		} if (width >= 768) {
+			document.getElementById("name").innerHTML = "Enthusia Premier League";
+			$('#headers').show();
+		} if(width <= 950) {
+			document.getElementById("headers").style.paddingRight = "0px";
+			document.getElementById("logo").style.marginLeft = "20px";
+		} if(width <= 1200 && width > 950) {
+			document.getElementById("headers").style.paddingRight = "100px";
+			document.getElementById("logo").style.marginLeft = "100px";
+		} if(width > 1200 && width < 1350) {
+			document.getElementById("headers").style.paddingRight = "250px";
+			document.getElementById("logo").style.marginLeft = "100px";
+		} if (width > 1350 ) {
+			document.getElementById("headers").style.paddingRight = "550px";
+			document.getElementById("logo").style.marginLeft = "100px";
+		}
+	});
+
+	function open_modal(file_name) {
+		$('#imagepreview').attr('src', 'img/modal/' + file_name + '.jpg'); 
+		$('#imagemodal').modal('show'); 
+	}
+
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+	  showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		if (n > x.length) {
+			slideIndex = 1;
+		}    
+		if (n < 1) {
+			slideIndex = x.length;
+		}
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		}
+		x[slideIndex-1].style.display = "block";  
+	}
+
+	//material modal control
+
+	$('#about_us').on('click', function(){
+		$('#cont').addClass('hidden');
+		$('#twit').addClass('hidden');
+		$('#fb').addClass('hidden');
+		if($('#abt').hasClass('hidden')){
+			$('#abt').removeClass('hidden');
+			$('.m_wrap').addClass('active');
+		}else{
+			$('.m_wrap').removeClass('active');
+			setTimeout(function(){$('#abt').addClass('hidden'); }, 500);
+		}
+		return false;
+	});
+
+	$('#contact_us').on('click', function(){
+		$('#abt').addClass('hidden');
+		$('#twit').addClass('hidden');
+		$('#fb').addClass('hidden');
+		if($('#cont').hasClass('hidden')){
+			$('#cont').removeClass('hidden');
+			$('.m_wrap').addClass('active');
+		}else{
+			$('.m_wrap').removeClass('active');
+			setTimeout(function(){$('#cont').addClass('hidden'); }, 500);
+		}
+		return false;
+	});
+
+	$('#fa-tw').on('click', function(){
+		$('#abt').addClass('hidden');
+		$('#cont').addClass('hidden');
+		$('#fb').addClass('hidden');
+		if($('#twit').hasClass('hidden')){
+			$('#twit').removeClass('hidden');
+			$('.m_wrap').addClass('active');
+		}else{
+			$('.m_wrap').removeClass('active');
+			setTimeout(function(){$('#twit').addClass('hidden'); }, 500);
+		}
+		return false;
+	});
+
+	$('#fa-fb').on('click', function(){
+		$('#abt').addClass('hidden');
+		$('#cont').addClass('hidden');
+		$('#twit').addClass('hidden');
+		if($('#fb').hasClass('hidden')){
+			$('#fb').removeClass('hidden');
+			$('.m_wrap').addClass('active');
+		}else{
+			$('.m_wrap').removeClass('active');
+			setTimeout(function(){$('#fb').addClass('hidden'); }, 500);
+		}
+		return false;
+	});
+</script>
+
+</body>
+
+</html>
